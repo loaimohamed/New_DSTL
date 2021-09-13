@@ -1,0 +1,38 @@
+body {margin: 0;background: #DEDEDE;font-family: Arial;}
+td, th {border: 0.1px solid;padding: 10px 15px;}td {position: relative;}
+table {border-collapse: collapse;margin: 0 auto;margin-bottom: 75px;}
+table tr th {background: #c0c0c0;font-weight: normal;}
+.boxmarks {
+    color: #FFF;
+    float: left;
+    font-size: 14px;
+    font-family: gabriola;
+    position: absolute;
+    top: 0px;
+    left: -28px;
+    line-height: 32px;
+    padding: 3px;
+    min-width: 20px;
+    transition-duration: 0.25s;
+    cursor: default;
+}
+.boxmarks::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    transition-duration: 0.25s;
+}
+.boxmarks:hover{
+    left: -34px;
+    min-width: 27px;
+}
+.rPG {background: lime;}.rPG::after {border-right:20px solid lime;}
+.r15 {background: orange}.r15::after {border-right:20px solid orange;}
+.r16 {background: blue;}.r16::after {border-right:20px solid blue;}
+.rMA {background: purple;}.rMA::after {border-right:20px solid purple;}
+.rR {background: red;}.rR::after {border-right:20px solid red;}
